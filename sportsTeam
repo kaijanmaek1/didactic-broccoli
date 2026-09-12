@@ -1,0 +1,8 @@
+//just little program that calculates a team's points
+def leaguePoints( wins: Int , draws : Int) =
+  wins * 3 + draws * 1
+//the program above can be used to make a season overview with the program below
+def teamStats( teamName : String , wins : Int, draws : Int , losses : Int) =
+  val total = wins + draws + losses
+  val points = leaguePoints(wins, draws)
+  s"$teamName: $wins/$total wins, $draws/$total draws, $losses/$total losses, $points points "
