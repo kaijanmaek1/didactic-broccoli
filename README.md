@@ -1,8 +1,6 @@
 # Didactic Broccoli
 
-This repository contains two small Scala mini‑projects I built while learning the language.
-They demonstrate basic functional programming, simple graphics composition, and formatted
-output generation.
+This repository is for my mini Scala-projects. 
 
 ## 1. Finnish Flag Generator
 
@@ -43,5 +41,4 @@ This part contains two utility functions:
 
 ## Why I built this
 
-I created these mini‑projects as part of learning Scala and experimenting with both
-graphics composition and simple data logic. 
+I created these mini‑projects as part of learning Scala and experimenting with it. 
