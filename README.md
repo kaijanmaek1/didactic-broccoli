@@ -37,6 +37,21 @@ This part contains two utility functions:
 - How to return formatted output strings
 - How to structure small utility functions
 
+## 3. Course Grade Calculator
+
+This part of the project contains two functions:
+
+- `overallGrade(project: Int, exam: Int, participation: Int)`  
+  Calculates a course grade from three components and ensures the result does not exceed 5.
+
+- `verbalEvaluation(projectGrade: Int, examBonus: Int, participationBonus: Int)`  
+  Converts the numeric grade into a verbal description using a buffer of predefined terms.
+
+### What I learned
+- How to use `math.min` to enforce upper limits
+- How to store and access values in a Scala `Buffer`
+- How to structure small utility functions cleanly
+
 ---
 
 ## Why I built this
