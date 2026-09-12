@@ -1,0 +1,12 @@
+// This is a program for grading a course (0 - 5) while taking three different variables into consideration
+
+def overallGrade( project : Int , exam : Int , participation : Int) =
+  val grade = project + exam + participation
+  math.min(grade, 5)
+
+// this next part is just to turn that grade into words using a buffer 
+
+def verbalEvaluation(projectGrade: Int, examBonus: Int, participationBonus: Int) =
+  val descriptions = Buffer("failed", "acceptable", "satisfactory", "good", "very good", "excellent")
+  val grade = overallGrade(projectGrade, examBonus, participationBonus)
+  descriptions(grade)
