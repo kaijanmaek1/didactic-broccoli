@@ -1,0 +1,24 @@
+def suomenLippu(leveys : Double) =
+// tehdään yhteensä 9 rakennuspalaa, joista lippu muodostuu
+// yksikkö on 1/18 koko lipun leveydestä ja 1/11 koko lipun pituudesta
+  val yksikko = leveys / 18
+// ensin pienemmät valkoiset suorakulmiot ( niitä tulee 2 kpl)
+  val pienempiValkoinen = rectangle( 5 * yksikko , 4 * yksikko , White )
+// sitten isommat valkoiset suorakulmiot
+  val isompiValkoinen = rectangle ( 10 * yksikko , 4 * yksikko , White )
+// sitten siniristin kaksi pystykomponenttia (ilman sitä osaa, joka on sekä pysty- että vaakakomponentissa)
+  val pystyRisti = rectangle( 3 * yksikko , 4 * yksikko, Blue)
+// sitten lyhyempi siniristin vaakakomponentti
+  val lyhytVaakaRisti = rectangle(5 * yksikko , 3 * yksikko , Blue)
+// sitten vaakaosuuden pidempi suorakulmio
+  val pitkaVaakaRisti = rectangle(18 * yksikko , 3 * yksikko , Blue)
+// sitten vielä siniristin keskikomponentti
+  val keskiRisti = rectangle( 3 * yksikko , 3 * yksikko , Blue)
+// sitten kootaan näillä komponenteilla lippu
+  val vasenYla = pienempiValkoinen.leftOf(pystyRisti)
+  val ylaOsa = isompiValkoinen.rightOf(vasenYla)
+  val alaOsaPuuttuu = pitkaVaakaRisti.below(ylaOsa)
+  val vasenAla = pienempiValkoinen.leftOf(pystyRisti)
+  val alaosa = isompiValkoinen.rightOf(vasenAla)
+  val kokoLippu = alaosa.below(alaOsaPuuttuu)
+  kokoLippu
