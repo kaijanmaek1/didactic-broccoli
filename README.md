@@ -1,6 +1,6 @@
 # Didactic Broccoli
 
-This repository is for my mini Scala-projects while I improve as a programmer (and also perhaps as a human)
+This repository is for my mini Scala-projects while I improve as a programmer (and also perhaps as a human).
 
 ## 1. Finnish Flag Generator
 
